@@ -8,8 +8,7 @@
     "test-0.8": "nave use 0.8 npm run test-main",
     "test-0.10": "nave use 0.10 npm run test-main",
     "test-0.12": "nave use 0.12 npm run test-main",
-    "test-all": "npm run test-main && npm run test-0.8 && npm run test-0.10 && npm run test-0.12",
-    "test": "if [ -e $TRAVIS ]; then npm run test-all; else npm run test-main; fi"
+    "test": "npm run test-main"
   },
   "repository": {
     "type": "git",
@@ -20,8 +19,8 @@
     "source-map": "~0.5.3"
   },
   "devDependencies": {
-    "tap": "~0.7.0",
-    "nave": "~0.5.0"
+    "tap": "~5.4.5",
+    "nave": "^3.5.2"
   },
   "keywords": [
     "source",
@@ -38,7 +37,7 @@
     "url": "http://thlorenz.com"
   },
   "license": "MIT",
-  "engine": {
-    "node": ">=0.6"
+  "engines": {
+    "node": ">=10"
   }
 }
