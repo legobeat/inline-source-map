@@ -19,7 +19,7 @@
     "source-map": "~0.5.3"
   },
   "devDependencies": {
-    "tap": "~5.4.5",
+    "tap": "^15.2.3",
     "nave": "^3.5.2"
   },
   "keywords": [
